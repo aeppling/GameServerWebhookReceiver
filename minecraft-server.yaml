@@ -14,10 +14,12 @@ spec:
       value: "true"
     - name: ENABLE_RCON
       value: "true"
+    - name: ONLINE_MODE
+      value: "true"
     - name: RCON.PASSWORD
-      value: "kexaroot"
+      value: "chooseRconPassword"
     - name: SERVER_NAME
-      value: "KexaCraft"
+      value: "yourserverName"
     - name: RCON.PORT
       value: "25575"
   - name: rcon
@@ -26,4 +28,4 @@ spec:
     - containerPort: 25575
     env:
     - name: RCON_PASSWORD
-      value: "kexaroot"
+      value: "chooseRconPassword"

@@ -55,3 +55,10 @@ kubectl apply -f minecraft-server.yaml
 ```
 
 Adjust paths, configurations, and resource requests according to your specific setup and requirements.
+
+
+## RCON and Minecraft setup
+
+In the '*minecraft-server.yaml*', you can set up all the server-properties of Minecraft Server beside the SERVER_NAME,
+and for RCON, setup the password to be the same in both fields, do not forget to use secrets to hide important informations.
+

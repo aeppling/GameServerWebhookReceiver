@@ -4,6 +4,10 @@ metadata:
   name: papermc-rcon-server
 spec:
   restartPolicy: Always
+  volumes:
+  - name: minecraft-data
+    persistentVolumeClaim:
+      claimName: minecraft-data
   containers:
   - name: papermc
     image: phyremaster/papermc
@@ -22,6 +26,9 @@ spec:
       value: "yourserverName"
     - name: RCON.PORT
       value: "25575"
+    volumeMounts:
+    - name: minecraft-data
+      mountPath: /minecraft
   - name: rcon
     image: outdead/rcon
     ports:

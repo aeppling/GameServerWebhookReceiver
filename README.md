@@ -1,6 +1,9 @@
-# GameServerWebhookReceiver
-A simple back end in NodeJS that receive webhook request and trigger actions on game servers running in Kubernetes pod
+# Minecraft server Kube pods & Webhook backend
 
+## Webhook backend
+
+This is for sending command in a game server when a webhook url is called.
+A simple back end in NodeJS that receive webhook request and trigger actions on game servers running in Kubernetes pod
 
 Initialize with :
 
@@ -13,6 +16,7 @@ Run with:
 ```bash
 npm run start
 ```
+
 
 ## Setting up Minecraft Server with Persistent Volume
 

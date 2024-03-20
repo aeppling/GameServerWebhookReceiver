@@ -1,0 +1,29 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: papermc-rcon-server
+spec:
+  restartPolicy: Always
+  containers:
+  - name: papermc
+    image: phyremaster/papermc
+    ports:
+    - containerPort: 25565
+    env:
+    - name: EULA
+      value: "true"
+    - name: ENABLE_RCON
+      value: "true"
+    - name: RCON.PASSWORD
+      value: "kexaroot"
+    - name: SERVER_NAME
+      value: "KexaCraft"
+    - name: RCON.PORT
+      value: "25575"
+  - name: rcon
+    image: outdead/rcon
+    ports:
+    - containerPort: 25575
+    env:
+    - name: RCON_PASSWORD
+      value: "kexaroot"

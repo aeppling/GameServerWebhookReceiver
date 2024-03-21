@@ -126,6 +126,7 @@ kubectl apply -f minecraft-server.yaml
 Adjust paths, configurations, and resource requests according to your specific setup and requirements.
 
 
+
 ## RCON and Minecraft setup
 
 In the '*minecraft-server.yaml*', you can set up all the server-properties of Minecraft Server beside the SERVER_NAME,
@@ -138,3 +139,16 @@ For this, you can clone this repository, the required files are server.js and pa
 Create a route and with the Rcon-cli command to send, and set the route as the webhook in the Kexa configuration !
 
 You can edit this as you wish, and to test the commands you can use the Rcon-cli available here: [gorcon/rcon-cli: RCON client for executing queries on game server. (github.com)](https://github.com/gorcon/rcon-cli)
+
+
+
+## Using Kexa to trigger RCON commands on Logs event
+
+This will learn you how to call your webhook backend when a specific log appear in your game server logs !
+You will get notify by SMS and will be able to trigger commands into your server
+
+
+
+Once you've set up you Minecraft server and Rcon pods, you can use Kexa script
+by following this tutorial on Medium :
+

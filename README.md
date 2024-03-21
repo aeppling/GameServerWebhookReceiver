@@ -131,3 +131,10 @@ Adjust paths, configurations, and resource requests according to your specific s
 In the '*minecraft-server.yaml*', you can set up all the server-properties of Minecraft Server beside the SERVER_NAME,
 and for RCON, setup the password to be the same in both fields, do not forget to use secrets to hide important informations.
 
+Now we will setup the backend to receive alerts from your game servers with Kexa, and send commands to the servers.
+
+For this, you can clone this repository, the required files are server.js and package_lock.json and package.json
+
+Create a route and with the Rcon-cli command to send, and set the route as the webhook in the Kexa configuration !
+
+You can edit this as you wish, and to test the commands you can use the Rcon-cli available here: [gorcon/rcon-cli: RCON client for executing queries on game server. (github.com)](https://github.com/gorcon/rcon-cli)
